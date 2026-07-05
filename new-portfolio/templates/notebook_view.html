@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="static-scraping-section">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+        <h1 class="page-title fade-in" style="margin: 0;">{{ notebook_name }}</h1>
+        <div class="card-buttons" style="margin-top: 0; width: auto; gap: 1rem;">
+            <a href="{{ url_for('static', filename=notebook_path) }}" download class="btn primary-btn card-action-btn" style="width: auto; padding: 0.7rem 1.5rem;">📥 Download Notebook</a>
+            <a href="javascript:history.back()" class="btn secondary-btn view-site-btn" style="width: auto; padding: 0.7rem 1.5rem;">← Back</a>
+        </div>
+    </div>
+    
+    <div class="table-container" style="text-align: center; padding: 4rem 2rem;">
+        <div style="font-size: 4rem; margin-bottom: 1rem;">📓</div>
+        <h2 style="color: var(--text-color); margin-bottom: 1rem;">Jupyter Notebook</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+            Browsers don't natively render Jupyter Notebooks. Download the notebook to view it in Jupyter Lab/Notebook, or upload it to an online viewer like 
+            <a href="https://nbviewer.org/" target="_blank" style="color: var(--accent-color); text-decoration: none;">nbviewer.org</a>.
+        </p>
+        <a href="https://nbviewer.org/github/your-username/your-repo/blob/main/path/to/notebook.ipynb" target="_blank" class="btn secondary-btn view-site-btn" style="width: auto; padding: 0.7rem 1.5rem;">
+            🌐 Open in nbviewer
+        </a>
+    </div>
+</section>
+{% endblock %}
