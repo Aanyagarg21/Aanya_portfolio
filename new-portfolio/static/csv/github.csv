@@ -1,0 +1,5 @@
+repo_name,owner,stars,forks,language
+flask,pallets,65000,16000,Python
+requests,psf,51000,9200,Python
+pandas,pandas-dev,42000,17000,Python
+numpy,numpy,25000,9800,C

@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero-section">
+    <div class="hero-text fade-in">
+        <h1>Hi, I'm <span class="highlight">Aanya</span></h1>
+        <h2>Software Engineer • AI/ML Enthusiast • Cybersecurity Aspirant</h2>
+        <p>B.Tech CSE student passionate about building intelligent systems, scraping data-driven insights, and securing digital assets. Always eager to learn and create impactful solutions.</p>
+        <div class="cta-buttons">
+            <a href="/projects" class="btn primary-btn">📂 View My Work</a>
+            <a href="https://github.com/Aanyagarg21" target="_blank" class="btn secondary-btn">🐙 Visit GitHub</a>
+        </div>
+    </div>
+    <div class="hero-image-container fade-in">
+        <div class="profile-image-frame">
+            <img src="{{ url_for('static', filename='images/Aanya.jpeg') }}" alt="Aanya Garg" class="profile-img">
+        </div>
+    </div>
+</section>
+
+<section class="skills-section fade-in">
+    <h2 class="section-title">Technical Expertise</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>💻 Languages</h3>
+            <div class="skill-badges">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge purple">C++</span>
+                <span class="skill-badge green">Java</span>
+                <span class="skill-badge orange">SQL</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h3>🤖 AI & Data</h3>
+            <div class="skill-badges">
+                <span class="skill-badge">Machine Learning</span>
+                <span class="skill-badge purple">Data Analysis</span>
+                <span class="skill-badge green">Pandas</span>
+                <span class="skill-badge">Requests</span>
+                <span class="skill-badge purple">BeautifulSoup</span>
+                <span class="skill-badge green">Web Scraping</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h3>🎯 Core CS</h3>
+            <div class="skill-badges">
+                <span class="skill-badge">DSA</span>
+                <span class="skill-badge purple">OOPs</span>
+                <span class="skill-badge green">Database Concepts</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h3>🔒 Cybersecurity & Networking</h3>
+            <div class="skill-badges">
+                <span class="skill-badge">Cybersecurity Fundamentals</span>
+                <span class="skill-badge purple">Networking Basics</span>
+                <span class="skill-badge green">Computer Networks</span>
+                <span class="skill-badge">Security Awareness</span>
+                <span class="skill-badge pink">Basic Ethical Hacking Concepts</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section fade-in">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-subtitle">Let's connect! Feel free to reach out for collaborations, opportunities, or just a chat about tech.</p>
+    <div class="contact-container">
+        <div class="contact-info-card">
+            <div class="info-item">
+                <span class="info-label">📧 Email</span>
+                <a href="mailto:aanyaaryan2024@gmail.com" class="contact-link">aanyaaryan2024@gmail.com</a>
+            </div>
+            <div class="info-item">
+                <span class="info-label">📞 Phone</span>
+                <span class="contact-text">+91-9306596535</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">💼 LinkedIn</span>
+                <a href="https://linkedin.com/in/Aanyagarg" target="_blank" class="contact-link">linkedin.com/in/Aanyagarg</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
